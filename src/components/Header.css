@@ -1,4 +1,7 @@
-.header{
+*{
+  margin: 0px;
+  padding: 0px;
+}.header{
     display: flex;
     align-items: center;
     background-color: black;
@@ -16,4 +19,19 @@
   text-decoration: none;
   font-size: 20px;
   margin-left: 80px;
+}
+
+@media (max-width:520px) {
+  .navbar a{
+   font-size: 15px;
+   margin-left: 10px;
+  }
+  .logo{
+    font-size: 30px;
+  }
+  .header{
+    height: 40px;
+    width: 100%;
+  }
+  
 }

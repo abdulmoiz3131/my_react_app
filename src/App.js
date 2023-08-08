@@ -28,8 +28,10 @@ function App() {
   }
 
   return (
+    
     <div className="App">
      <Header/>
+     {/* Form  */}
      <div className="mainBox">
      <TextField 
      value={name}
@@ -39,7 +41,7 @@ function App() {
      value={email}
      onChange={(event)=>{setEmail(event.target.value)}}
      id="outlined-basic" label="email" variant="outlined" />
-     <Button
+     <Button id='btn-2'
      onClick={addData}
      variant="contained">
       <AddIcon/>
@@ -61,7 +63,8 @@ function App() {
         <div key={index} className="rederData">
         <h3>{element.name}</h3>
         <h3>{element.email}</h3>
-        <h3><Button onClick={()=>{removeItem(index)}}
+        <h3><Button 
+        id='btn-1' onClick={()=>{removeItem(index)}}
         
         variant="contained"><DeleteIcon /></Button></h3>
        </div>)
